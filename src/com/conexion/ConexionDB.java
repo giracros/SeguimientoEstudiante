@@ -11,7 +11,7 @@ public class ConexionDB {
 	
 	static Connection con = null;
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL_CONEXION = "jdbc:mysql://localhost/seguimiento_uno";
+    private static final String URL_CONEXION = "jdbc:mysql://localhost/SeguimientoDB";
     private static final String USUARIO = "root";
     private static final String PASSWORD = "";
 	

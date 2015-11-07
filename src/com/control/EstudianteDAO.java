@@ -16,7 +16,7 @@ public class EstudianteDAO {
 
 		try {
 			PreparedStatement registroEstudiante = con
-					.prepareStatement("call insertar (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+					.prepareStatement("call SP_InsertarEstudiante (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 			registroEstudiante.setString(1, estudiante.getCarnet());
 			registroEstudiante.setString(2, estudiante.getNombre());
 			registroEstudiante.setString(3, estudiante.getFacultad());
@@ -48,7 +48,7 @@ public class EstudianteDAO {
 		Connection cnn = ConexionDB.getConnection();
 		EstudianteDTO estudiante;
 		try {
-			PreparedStatement registroEstudiante = cnn.prepareStatement("call listado_general()");
+			PreparedStatement registroEstudiante = cnn.prepareStatement("call SP_ListadoGeneral()");
 			ResultSet rs = registroEstudiante.executeQuery();
 			while (rs.next()) {
 				estudiante = new EstudianteDTO();
@@ -80,7 +80,7 @@ public class EstudianteDAO {
 		Connection cnn = ConexionDB.getConnection();
 		EstudianteDTO estudianteGana;
 		try {
-			PreparedStatement registroEstudiante = cnn.prepareStatement("call listado_ganan()");
+			PreparedStatement registroEstudiante = cnn.prepareStatement("call SP_Listado_Ganan()");
 			ResultSet rs = registroEstudiante.executeQuery();
 			while (rs.next()) {
 				estudianteGana = new EstudianteDTO();
@@ -112,7 +112,7 @@ public class EstudianteDAO {
 		Connection cnn = ConexionDB.getConnection();
 		EstudianteDTO estudianteHabilita;
 		try {
-			PreparedStatement registroEstudiante = cnn.prepareStatement("call listado_habilitan()");
+			PreparedStatement registroEstudiante = cnn.prepareStatement("call SP_ListadoHabilitan()");
 			ResultSet rs = registroEstudiante.executeQuery();
 			while (rs.next()) {
 				estudianteHabilita = new EstudianteDTO();
@@ -144,7 +144,7 @@ public class EstudianteDAO {
 		Connection cnn = ConexionDB.getConnection();
 		EstudianteDTO estudiantePierde;
 		try {
-			PreparedStatement registroEstudiante = cnn.prepareStatement("call listado_pierden()");
+			PreparedStatement registroEstudiante = cnn.prepareStatement("call SP_ListadoPierde()");
 			ResultSet rs = registroEstudiante.executeQuery();
 			while (rs.next()) {
 				estudiantePierde = new EstudianteDTO();
@@ -174,7 +174,7 @@ public class EstudianteDAO {
 	public static void eliminar(String carnet) {
 		Connection cnn = ConexionDB.getConnection();
 		try {
-			PreparedStatement eliminarEstudiante = cnn.prepareStatement("call eliminar(?)");
+			PreparedStatement eliminarEstudiante = cnn.prepareStatement("call SP_EliminiarEstudiante(?)");
 			eliminarEstudiante.setString(1, carnet);
 			eliminarEstudiante.executeUpdate();
 			
@@ -192,7 +192,7 @@ public class EstudianteDAO {
 		EstudianteDTO estudiante = new EstudianteDTO();
 		
 		try {
-			PreparedStatement registroEstudiante = cnn.prepareStatement("call consultar (?)");
+			PreparedStatement registroEstudiante = cnn.prepareStatement("call SP_ConsultarEstudiantesActivos (?)");
 			registroEstudiante.setString(1, carnet);
 			ResultSet rs = registroEstudiante.executeQuery();
 			if (rs.next()) {
@@ -223,7 +223,7 @@ public class EstudianteDAO {
 		Connection cnn = ConexionDB.getConnection();
 		try {
 			PreparedStatement registroEstudiante = cnn
-					.prepareStatement("call modificar(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+					.prepareStatement("call SP_ModificarEstudiante(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 			registroEstudiante.setString(1, estudiante.getCarnet());
 			registroEstudiante.setString(2, estudiante.getNombre());
 			registroEstudiante.setString(3, estudiante.getFacultad());

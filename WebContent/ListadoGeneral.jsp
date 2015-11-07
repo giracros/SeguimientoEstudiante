@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Listado General</title>
-<link rel="stylesheet" type="text/css" href="formatocss.css"/>
+<link rel="stylesheet" type="text/css" href="formatocss.css" />
 </head>
 <body>
 	<table width="500" border="0" align="center">
@@ -64,11 +64,11 @@
 						href="FachadaEstudiante?opc=consultar&carnet=<c:out value="${lestudiantes.carnet}"/>">Modificar</a></td>
 				</tr>
 			</c:forEach>
-						<tr>
+			<tr>
 				<td>&nbsp;</td>
 			</tr>
 			<tr>
-				<td colspan="2"><a href="Index.jsp"> Retornar al Index </a></td>
+				<td colspan="2"><a href="Index.jsp">Home</a></td>
 			</tr>
 		</tbody>
 

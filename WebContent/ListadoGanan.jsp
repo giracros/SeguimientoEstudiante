@@ -67,7 +67,7 @@
 				<td>&nbsp;</td>
 			</tr>
 			<tr>
-				<td colspan="2"><a href="Index.jsp"> Retornar al Index </a></td>
+				<td colspan="2"><a href="Index.jsp">Home</a></td>
 			</tr>
 		</tbody>
 

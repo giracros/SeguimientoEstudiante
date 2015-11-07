@@ -25,74 +25,87 @@
 
 			<tr>
 				<td>Carnet</td>
-				<td><input text="text" id="carnet" name="carnet" required
-					placeholder="Carnet" autofocus /></td>
+				<td>
+				<input text="text" id="carnet" name="carnet" required placeholder="Carnet" autofocus />
+				</td>
 			</tr>
 			<tr>
 				<td>Nombre</td>
-				<td><input text="text" id="nombre" name="nombre" required
-					placeholder="Nombre" /></td>
+				<td>
+				<input text="text" id="nombre" name="nombre" required placeholder="Nombre" />
+				</td>
 			</tr>
 			<tr>
 				<td>Facultad</td>
-				<td><input text="text" id="facultad" name="facultad" required
-					placeholder="Facultad" /></td>
+				<td>
+				<input text="text" id="facultad" name="facultad" required placeholder="Facultad" />
+				</td>
 			</tr>
 			<tr>
 				<td>Semestre</td>
-				<td><input text="text" id="semestre" name="semestre" required
-					placeholder="Semestre" /></td>
+				<td>
+				<input text="numeric" id="semestre" name="semestre" required placeholder="Semestre" />
+				</td>
 			</tr>
 			<tr>
 				<td>Materia</td>
-				<td><input text="text" id="materia" name="materia" required
-					placeholder="Materia" /></td>
+				<td><input text="text" id="materia" name="materia" required placeholder="Materia" /></td>
 			</tr>
 			<tr>
 				<td>Primer Parcial</td>
-				<td><input text="text" id="pacialI" name="parcialI" required
-					placeholder="Primer Parcial" /></td>
+				<td>
+				<input text="text" id="pacialI" name="parcialI" required placeholder="Primer Parcial" />
+				</td>
 			</tr>
 			<tr>
 				<td>Segundo Parcial</td>
-				<td><input text="text" id="parcialII" name="parcialII" required
-					placeholder="Segundo Parcial" /></td>
+				<td>
+				<input text="text" id="parcialII" name="parcialII" required placeholder="Segundo Parcial" />
+				</td>
 			</tr>
 			<tr>
 				<td>Primera Nota</td>
-				<td><input text="text" id="notaI" name="notaI" required
-					placeholder="Primera Nota" /></td>
+				<td>
+				<input text="text" id="notaI" name="notaI" required placeholder="Primera Nota" />
+				</td>
 			</tr>
 			<tr>
 				<td>Segunda Nota</td>
-				<td><input text="text" id="notaII" name="notaII" required
-					placeholder="Segunda Nota" /></td>
+				<td>
+				<input text="text" id="notaII" name="notaII" required placeholder="Segunda Nota" />
+				</td>
 			</tr>
 			<tr>
 				<td>Tercera Nota</td>
-				<td><input text="text" id="notaIII" name="notaIII" required
-					placeholder="Tercera Nota" /></td>
+				<td>
+				<input text="text" id="notaIII" name="notaIII" required placeholder="Tercera Nota" />
+				</td>
 			</tr>
 			<tr>
 				<td>Coevaluacion</td>
-				<td><input text="text" id="coevaluacion" name="coevaluacion"
-					required placeholder="Coevaluacion" /></td>
+				<td>
+				<input text="text" id="coevaluacion" name="coevaluacion" required placeholder="Coevaluacion" />
+				</td>
 			</tr>
 			<tr>
 				<td>Final</td>
-				<td><input text="text" id="final" name="final" required
-					placeholder="Final" /></td>
+				<td>
+				<input text="text" id="final" name="final" required placeholder="Final" />
+				</td>
 			</tr>
 
   			<tr>
 				<td>Definitiva</td>
-				<td><input text="text" id="definitiva" name="definitiva" disabled="disabled"/></td>
+				<td>
+				<input text="text" id="definitiva" name="definitiva" disabled="disabled"/>
+				</td>
 			</tr>  
 
 			<tr>
 				<td>Observaciones</td>
-				<td><input text="text" id="observacion" name="observacion"
-					required placeholder="Observaciones" /></td>
+				<td>
+				<input text="text" id="observacion" name="observacion" required placeholder="Observaciones" />
+				</td>
 			</tr>
 			<tr>
 				<td colspan="2">&nbsp;</td>
